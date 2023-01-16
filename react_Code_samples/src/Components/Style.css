@@ -1,0 +1,95 @@
+.product_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.swiper {
+  width: 100%;
+  height: 50%;
+  padding: 90px;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after{
+    color: rgb(36, 228, 11);
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgb(20, 19, 19);
+  color: rgb(36, 228, 11);
+    width: 500px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.product_swiper>.swiper-wrapper{
+    height: 90%;
+}
+
+.AddToCartBtn,.RemoveFromCartBtn{
+    width: 120px;
+    background: green !important;
+    border: none !important;
+   margin-top: 20px;
+}
+.AddToCartBtn:focus ,.RemoveFromCartBtn:focus{
+    border: 1px solid rgb(9, 252, 9) !important;
+}
+.AddToCartBtn:hover,.RemoveFromCartBtn:hover{
+  box-shadow: 1px 3px 14px rgb(9 252 9) ;  
+}
+.ProductSlide{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+}
+
+.cartItemCard{
+    background: black !important;
+    color: rgb(36, 228, 11);
+    width: 530px;
+    position: relative;
+   
+}
+.quantityBubble{
+    width: 50px !important;
+    right: 0 !important;
+    background: black;
+    color: rgb(36, 228, 11);
+    border:2px solid rgb(36, 228, 11);
+    position: absolute;
+}
+.RemoveFromCartBtn{
+    width: 98%;
+    margin: 5px;
+}
